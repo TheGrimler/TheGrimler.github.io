@@ -1,0 +1,78 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="1800" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Search Bar</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="C:\Users\awisniewski\OneDrive\Documents\webPages\Unti.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var searchText = $(this).val().toLowerCase();
+            $("#kaList *").filter(function() {
+                var ind = $(this).text().toLowerCase().indexOf(searchText)
+                if (ind != -1 && searchText != "") {
+                    $(this).show()
+                } else {
+                    $(this).hide()
+                }
+            });
+          });
+        });
+        </script>
+        <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = 'b08d30b01274fbe6afdddbac265cf6cd24a1e050';
+    window.smartsupp||(function(d) {
+      var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+      s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+      c.type='text/javascript';c.charset='utf-8';c.async=true;
+      c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+    })(document);
+    </script>
+</head>
+<body>
+    <div class="topBackground"></div>
+    <h1> Welcome to the Tech Support Home Page</h1>
+    <h2> Find a Solution to your technical problems by searching below</h2>
+    <div class = "wrap">
+        <div class="search">
+            <input id="userInput" type="text" class="searchterm" name="" placeholder="Search Here">
+            <button type="submit" class="searchbtn">
+                <i class="fa fa-search"></i>
+            </button>
+                <div id="kaList" class="listStyle">
+                    <ul>
+                        <li><a href="https://www.wikipedia.org">How To Add Email Signature</a></li>
+                        <li>How To Factory Reset a Chromebook</li> 
+                        <li>List of Approved Desktop Printers</li>
+                        <li>Classroom Hardware SetUp</li> 
+                        <li>Scoring Scales Description</li> 
+                    </ul>
+                </div> 
+        </div>
+    </div>
+
+    <table id="knownIssues">
+        <th>Known Issues</th>
+        <tr>
+        <td>Caseload Bug</td>
+        </tr>
+        <tr>
+        <td>Gradebook Bug</td>
+        </tr>
+        <td>Telephone & Internet Outage</td>
+    </table>
+
+    <ul class = "mostUsed">
+        <li><a href="https://www.wikipedia.org">How To Reimage a Computer</a></li>
+        <li>How to Complete a Student Transferk</li> 
+        <li>Adding Email to Iphone or Android</li>
+        <li>Classroom Hardware SetUp</li> 
+        <li>Exlanation of Grade Weighting</li> 
+    </ul>
+</body>
+</html>
