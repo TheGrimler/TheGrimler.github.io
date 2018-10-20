@@ -13,7 +13,7 @@ h1{
     left: 25%;
     font-size: 40;
    /* text-align: center;*/
-    color: rgb(178, 206, 238);
+    color: black;
     line-height: 0;
 }
 
@@ -24,7 +24,7 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16;
    /* text-align: center;*/
-    color: rgb(226, 204, 179)
+    color: black;
    
 }
 .wrap{
