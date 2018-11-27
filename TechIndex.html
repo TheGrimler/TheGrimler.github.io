@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Technology Support</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
+
+    <!-- Custom fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+
+    <!--Javascript list action-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#kaList *").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              if (value != -1 && value != ""){
+                $('#kaList').show();
+              } else {
+                $('#kaList').hide();
+              }
+            });
+          });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!--PureChat Feature-->
+      <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } };
+        (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; 
+        script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; 
+        document.getElementsByTagName('HEAD').item(0).appendChild(script); 
+        script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) 
+            { var w = new PCWidget({c: '8e310697-6322-49a6-90d9-32c3226142b7', f: true }); done = true; 
+              } 
+          };  
+        })();
+      </script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand">Technology Homepage</a>
+        <a class="btn btn-primary" href="Email Form.html" target="_blank">Send an Email</a>
+      </div>
+    </nav>
+
+    <!-- Masthead -->
+    <header class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5">Find Solutions to All Your Tech Issues</h1>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <input id="myInput" type="text" class="form-control form-control-lg" placeholder="Search...">
+        <!-- Create List of knowledge articles -->
+                <div id="list">
+                    <ul id="kaList">
+                      <li><a href="#">How To Add Email Signature</a></li>
+                      <li><a href="#">How To Factory Reset a Chromebook</a> </li>
+                      <li><a href="#">List of Approved Desktop Printers</a></li>
+                      <li><a href="#">Classroom Hardware SetUp</a> </li>
+                      <li><a href="#">Scoring Scales Description</a> </li>
+                    </ul>
+                   </div> 
+                </div>
+                <div class="col-12 col-md-3">
+                  <button type="submit" class="btn btn-block btn-lg btn-success">
+                    <i class="fas fa-search"></i>
+                  </button>
+
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+ 
+<!--     <div class="card" style="width: 30rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div> -->
+
+    <!-- Icons Grid -->
+    <section class="features-icons bg-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                  <i class="fas fa-bug"></i>
+              </div>
+              
+              <!--  Create table for known issues -->
+              <h3>Known Issues</h3>
+              <table id="knownIssues">
+                  <tr>
+                    <td class="lead mb-0">Caseload Bug</td>
+                  </tr>
+                  <tr>
+                    <td class="lead mb-0">Gradebook Bug</td>
+                  </tr>
+                    <td class="lead mb-0">Telephone & Internet Outage</td>
+            </table>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">  
+              </div>
+
+              <!--  Create table for known issues -->
+              <h3>Most Used Articles</h3>
+              <table id="mostused">
+                <tr>
+                  <td class="lead mb-0">Create Email Signature</td>
+                </tr>
+                <tr>
+                  <td class="lead mb-0">Factory Reset a Chromebook</td>
+                </tr>
+                <tr>
+                  <td class="lead mb-0">How to Create a Gradebook Assignment</td>
+                </tr>
+                  <td class="lead mb-0">Map a Network Drive</td>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

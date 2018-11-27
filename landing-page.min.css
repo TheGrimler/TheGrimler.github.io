@@ -1,0 +1,110 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.0 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+ body{
+    font-family: 'Orbitron', sans-serif;
+    }
+
+
+ h1,h2,h3,h4,h5,h6{
+     font-family: 'Volkhov', serif;
+     font-weight:700
+    }
+    header.masthead{
+        position:relative;
+        background-color:#343a40;
+        background:url(../img/computercoffee.jpg) no-repeat center center;
+        background-size:cover;
+        padding-top:8rem;
+        padding-bottom:8rem
+    }
+    header.masthead .overlay{
+        position:absolute;
+        background-color:#212529;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;
+        opacity: 0.6;
+    }
+    header.masthead h1{
+        font-size:2rem
+    }
+    @media (min-width:768px){    
+    header.masthead{
+        padding-top:12rem;
+        padding-bottom:12rem
+    }
+    header.masthead h1{
+        font-size:3rem
+    }
+    }
+    .form-control{
+        border-radius: 20px;
+      }
+      .btn-success{
+        border-radius: 20px;
+        background-color: coral;
+      }
+/* change the glowing blue shadow around the search bar */
+.form-control:focus {
+    box-shadow:none;
+    -webkit-box-shadow:none; 
+    border-color:#439732; 
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+   }
+
+    a:link{
+        color: white;
+    }
+    a:visited{
+        color: white;
+    }
+    a:hover{
+        color: greenyellow;
+    }
+
+    @media (min-width:768px){
+        .showcase .showcase-text
+        {padding:7rem}
+    }
+#kaList {
+    list-style-type: none;
+    padding-left: 7px;
+    display: none;
+}
+
+#kaList li a {
+    list-style-type: none;
+    border: 1px solid #ddd; /* Add a border to all links */
+    border-radius: 20px;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 16px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block;/* Make it into a block element to fill the whole list */
+}
+
+#kaList li a:hover:not(.header) {
+    background-color:coral; /* Add a hover effect to all links, except for headers */
+}
+    .features-icons{
+        background-color: rgb(243, 227, 201);
+        color: midnightblue;
+    }
+    .features-icons{
+        padding-top:7rem;
+        padding-bottom:7rem
+    } 
+   .features-icons .features-icons-item{
+        max-width:20rem
+    } 
+
+    .knownIssues{
+        margin: auto;
+        width: 50%;
+    }
