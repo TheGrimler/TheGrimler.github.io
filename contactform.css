@@ -1,0 +1,18 @@
+body{
+    background-color: royalblue;
+}
+.card-header{
+    background-color: cadetblue;
+    color: beige;
+}
+.card{
+    /* align-items: center; */
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    width: 40rem;
+}
+.alert{
+    display: none;
+}
