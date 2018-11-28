@@ -5,8 +5,8 @@
  */
  body{
     font-family: 'Orbitron', sans-serif;
+    background-color: beige;
     }
-
 
  h1,h2,h3,h4,h5,h6{
      font-family: 'Volkhov', serif;
@@ -15,7 +15,7 @@
     header.masthead{
         position:relative;
         background-color:#343a40;
-        background:url(../computercoffee.jpg) no-repeat center center;
+        background:url(../img/computercoffee.jpg) no-repeat center center;
         background-size:cover;
         padding-top:8rem;
         padding-bottom:8rem
@@ -52,7 +52,7 @@
 .form-control:focus {
     box-shadow:none;
     -webkit-box-shadow:none; 
-    border-color:#439732; 
+    border-color:#20291f; 
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
    }
@@ -92,19 +92,32 @@
 #kaList li a:hover:not(.header) {
     background-color:coral; /* Add a hover effect to all links, except for headers */
 }
-    .features-icons{
-        background-color: rgb(243, 227, 201);
-        color: midnightblue;
+/*     .features-icons{
+        color: rgb(47, 27, 133);
+        background-color: beige;
+    }
+    .features-icons .overlay{
+        opacity: 0.6;
     }
     .features-icons{
-        padding-top:7rem;
+        padding-top:5rem;
         padding-bottom:7rem
     } 
    .features-icons .features-icons-item{
         max-width:20rem
     } 
-
     .knownIssues{
         margin: auto;
         width: 50%;
-    }
+    } */
+.card{
+    width: 30rem;
+    border: none;
+    background-color: beige;
+    text-align: center;
+    padding-top: 20px;
+}
+.list-group li{
+    background-color: beige;
+    font-family: 'Volkhov', serif;
+}
