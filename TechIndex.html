@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
-    <link href="../landing-page.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/techindex.css" rel="stylesheet">
 
     <!--Javascript list action-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -101,36 +101,44 @@
         </div>
       </div>
     </header>
- 
-<!--     <div class="card" style="width: 30rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div> -->
 
     <!-- Icons Grid -->
-    <section class="features-icons bg-light text-center">
+    <!-- <section class="features-icons text-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                  <i class="fas fa-bug"></i>
-              </div>
+          <div class="col-lg-6"> 
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3"> 
+           <div class="features-icons-icon d-flex"></div>  -->
+              <!-- only need the above two divs when using grid only, not cards -->
               
+              <div class="card-deck">
+              <div class="card">
+                  <i class="fas fa-desktop fa-5x"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Known Issues </h5>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Caseload Bug</li>
+                    <li class="list-group-item">Gradebook Bug</li>
+                    <li class="list-group-item">Telephone & Internet Outage</li>
+                  </ul>
+                </div>
+
+                <div class="card">
+                  <i class="fas fa-file-alt fa-5x"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Most Used Articles</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Factory Reset a Chromebook</li>
+                      <li class="list-group-item">Create a Gradebook Assignment</li>
+                      <li class="list-group-item">Map a Network Drive</li>
+                      <li class="list-group-item">All Files are Greyed Out with an X</li>
+                    </ul>
+                  </div>
+
               <!--  Create table for known issues -->
-              <h3>Known Issues</h3>
+             <!--  <h3>Known Issues</h3>
               <table id="knownIssues">
                   <tr>
                     <td class="lead mb-0">Caseload Bug</td>
@@ -146,10 +154,10 @@
           <div class="col-lg-6">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <div class="features-icons-icon d-flex">  
-              </div>
+              </div> -->
 
-              <!--  Create table for known issues -->
-              <h3>Most Used Articles</h3>
+              <!--  Create table for most used articles -->
+             <!--  <h3>Most Used Articles</h3>
               <table id="mostused">
                 <tr>
                   <td class="lead mb-0">Create Email Signature</td>
@@ -166,7 +174,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   
 
     <!-- Bootstrap core JavaScript -->
