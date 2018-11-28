@@ -5,7 +5,7 @@
  */
  body{
     font-family: 'Orbitron', sans-serif;
-    background-color: white;
+    background-color: #FFFFFF;
     }
 
  h1,h2,h3,h4,h5,h6{
@@ -113,11 +113,11 @@
 .card{
     width: 30rem;
     border: none;
-    background-color: white;
+    background-color: #FFFFFF;
     text-align: center;
     padding-top: 20px;
 }
 .list-group li{
-    background-color: white;
+    background-color: #FFFFFF;
     font-family: 'Volkhov', serif;
 }
